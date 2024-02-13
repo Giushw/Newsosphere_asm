@@ -1,2 +1,2 @@
 # Newsosphere_asm
-Playgrong for a tailwind news site.
+Playground for a tailwind news site.
