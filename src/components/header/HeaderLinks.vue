@@ -16,8 +16,7 @@
 </template>
 
 <script setup>
-import IconProfile from '../icons/IconProfile.vue';
-
+  import IconProfile from '../icons/IconProfile.vue';
 </script>
 
 <style lang="scss">
