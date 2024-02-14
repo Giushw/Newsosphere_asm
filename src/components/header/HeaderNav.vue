@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full flex">
+    <section class="navigation_wrapper">
       <nav class="header_navigation">
         <ul class="flex">
           <li  v-for="section in sections" :key="section.value">
@@ -22,11 +22,7 @@
     import { ref, type Ref } from 'vue';
     import IconAa from '../icons/IconAa.vue';
     import IconVector from '../icons/IconVector.vue';
-
-    interface KV {
-      label: string,
-      value: string
-    };
+    import type {KV} from '../../types/KeyValue';
 
     const sections: Ref<KV[]> = ref([
       {
@@ -65,17 +61,22 @@
   </script>
   
   <style lang="scss">
+    .navigation_wrapper {
+      @apply w-full flex border-b border-solid border-black;
+    }
+
     .header {
       &_navigation {
-        @apply w-5/6 px-6 border-b;
+        @apply w-5/6 px-6;
 
         ul {
           > * {
-            @apply flex justify-around font-raleway font-bold px-4 py-6 text-center text-xl border-b-4 border-white;
+            @apply flex justify-around font-raleway font-bold px-4 py-6 text-center text-xl border-b-[9px] border-white;
             @apply lg:text-2xl;
 
             &:hover {
-              @apply border-red-500 transition-colors;
+              @apply border-[#FF2C33] transition-colors;
+
             }
           }
         }
@@ -88,7 +89,7 @@
           @apply p-1.5;
 
           &:last-child {
-            @apply border border-solid rounded shadow-[-2px_2px_0px_0px_#000000];
+            @apply border border-solid border-black rounded shadow-[-2px_2px_0px_0px_#000000];
 
           }
         }

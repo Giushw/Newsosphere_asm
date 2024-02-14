@@ -1,6 +1,8 @@
 <template>
   <header class="header">
     <HeaderLinks />
+
+    <HeaderSearchMenu />
     
     <template class="hidden md:flex">
       <HeaderNav />
@@ -10,6 +12,7 @@
 
 <script setup lang="ts">
   import HeaderLinks from './HeaderLinks.vue';
+  import HeaderSearchMenu from './HeaderSearchMenu.vue';
   import HeaderNav from './HeaderNav.vue';
 </script>
 

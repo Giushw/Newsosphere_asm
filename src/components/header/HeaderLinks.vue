@@ -15,7 +15,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import IconProfile from '../icons/IconProfile.vue';
 </script>
 
@@ -31,21 +31,26 @@
       @apply md:justify-start md:bottom-0;
 
        > * {
-        @apply w-1/2 px-8 py-4 text-center border-y border-solid border-black text-sm;
-        @apply md:border-0 md:p-0 md:w-fit;
+        @apply w-1/2 px-8 py-4 text-center text-sm;
+        @apply md:p-0 md:w-fit;
 
         &:first-child {
+          @apply border-r border-solid border-black;
           @apply border-r md:border-0 md:mr-6;
         }
 
-        &:last-child {
-          @apply border-l md:border-0;
+        &:hover {
+          @apply text-[#FF2C33] transition-colors;
         }
       }
     }
 
     &_login {
       @apply hidden md:flex md:text-sm;
+
+      &:hover {
+        @apply text-[#FF2C33] transition-colors;
+      }
 
       svg {
         @apply mr-1;
