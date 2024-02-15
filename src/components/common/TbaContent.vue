@@ -13,13 +13,13 @@
 </script>
 
 <style lang="scss">
-  .tba_wrapper {
-    @apply grid min-h-full place-items-center bg-[#F4F1DE] px-6 py-24;
-    @apply sm:py-32;
-    @apply lg:px-8;
-  }
-
   .tba {
+    &_wrapper {
+      @apply grid min-h-full place-items-center bg-[#F4F1DE] px-6 py-24;
+      @apply sm:py-32;
+      @apply lg:px-8;
+    }
+
     &_content {
       @apply text-center;
 
