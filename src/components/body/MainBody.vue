@@ -1,15 +1,15 @@
 <template>
     <main class="body">
-      <!-- <HeroNews /> -->
+      <TbaContent />
     </main>
   </template>
   
   <script setup lang="ts">
-    // import HeroNews from './HeroNews.vue';
+    import TbaContent from '../common/TbaContent.vue';
   </script>
   
   <style lang="scss">
     .body {
-      @apply font-raleway flex w-full flex-col;
+      @apply font-raleway flex h-[60vh] w-full flex-col;
     }
   </style>
