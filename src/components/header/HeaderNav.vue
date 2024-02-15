@@ -67,16 +67,21 @@
 
     .header {
       &_navigation {
-        @apply w-5/6 px-6;
+        @apply w-5/6 px-5;
+        @apply xl:px-10;
 
         ul {
           > * {
-            @apply flex justify-around font-raleway font-bold px-4 py-6 text-center text-xl border-b-[9px] border-white;
-            @apply lg:text-2xl;
+            @apply flex justify-around font-raleway font-bold py-6 mr-4 text-center text-sm;
+            @apply lg:text-lg lg:mr-4 lg:border-b-[9px] lg:border-white;
+            @apply xl:text-2xl xl:mr-8;
 
             &:hover {
               @apply border-[#FF2C33] transition-colors;
+            }
 
+            &:last-child {
+              @apply mr-0;
             }
           }
         }
